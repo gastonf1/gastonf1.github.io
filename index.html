@@ -20,6 +20,7 @@
     <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
+    <link href="assets/css/estilo.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -47,16 +48,19 @@
     <!-- Navbar End -->
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+    <div class="container-fluid d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="overlay"></div>
+        <video onloadedmetadata="this.muted=true" autoplay loop id="videoposter">
+            <source id="homevideo" src="./img/video/1.mp4" type="video/mp4">
+        </video>
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/avatar.png" alt="">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h2 class="text-white font-weight-normal">Hola Soy</h2>
                 </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">Hola Soy</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">GASTON FERREIRA</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                <div class="col-lg-9 text-lg-left">
+                    <h1 class="display-3 text-uppercase text-primary ">GASTON FERREIRA</h1>
+                    <h1 class="example typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Diseñador web, Desarrollador de aplicaciones, Programador, Diseñador Grafico, Community Manager</div>
                 </div>
             </div>
@@ -484,184 +488,6 @@
 
             <!-----------------------> 
 
-        <!-------------------------------------PROYECTOS APLICACIONES   app ------------------------------------->  
-
-            <!----------------------->
-
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item app">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100"src="./img/portafolio/aplicaciones-detectormovimento.jpg" alt="img"> 
-                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                <a type="button" data-toggle="modal" data-target="#aplicaciones-detectormovimento">
-                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="aplicaciones-detectormovimento" tabindex="-1" role="dialog" aria-labelledby="aplicaciones-detectormovimentoLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="aplicaciones-detectormovimentoLabel">Programa de detección de movimiento</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                Un programa escrito en Pyton, utilizando visión por computadora y una IA (inteligencia artificial) programada para reconocer personas o objetos se puede detectar el movimiento en un aria determinada, para eso este programa se conecta a una o múltiples cámaras IPs
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-            <!----------------------->
-
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item app">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100"src="./img/portafolio/aplicaciones-detectortapaboca.jpg" alt="img"> 
-                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                <a type="button" data-toggle="modal" data-target="#aplicaciones-detectortapaboca">
-                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="aplicaciones-detectortapaboca" tabindex="-1" role="dialog" aria-labelledby="aplicaciones-detectortapabocaLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="aplicaciones-detectortapabocaLabel">Detector de Tapaboca</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                Un programa escrito en Pyton, utilizando visión por computadora y una IA (inteligencia artificial) programada para reconocer rostros y detectar la presencia o uso del tapaboca
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-            <!----------------------->
-
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item app">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100"src="./img/portafolio/aplicaciones-E-Marketing.jpg" alt="img"> 
-                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                <a type="button" data-toggle="modal" data-target="#aplicaciones-E-Marketing">
-                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="aplicaciones-E-Marketing" tabindex="-1" role="dialog" aria-labelledby="aplicaciones-E-MarketingLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="aplicaciones-E-MarketingLabel">aplicaciones de E-Marketing</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                Una Aplicacion construida para hacer E-Marketing (Correos Publicitarios) manda de forma automatica correos publicitarios a los cliente de una empresa
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-            <!----------------------->
-
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item app">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100"src="./img/portafolio/aplicaciones-geolocalisar-ips.jpg" alt="img"> 
-                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                <a type="button" data-toggle="modal" data-target="#aplicaciones-geolocalisar-ips">
-                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="aplicaciones-geolocalisar-ips" tabindex="-1" role="dialog" aria-labelledby="aplicaciones-geolocalisar-ipsLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="aplicaciones-geolocalisar-ipsLabel">App para Geolocalisar IPs</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                Una Aplicación creada para Geolocalisar la procedencia de una conexión IP de un dispositivo informático conectado a la red 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-            <!----------------------->
-
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item app">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100"src="./img/portafolio/aplicaciones-grabartv.jpg" alt="img"> 
-                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                <a type="button" data-toggle="modal" data-target="#aplicaciones-grabartv">
-                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="aplicaciones-grabartv" tabindex="-1" role="dialog" aria-labelledby="aplicaciones-grabartvLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="aplicaciones-grabartvLabel">App para Grabar Canales de TV</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                Una Aplicación creada para grabar de forma automatica canales de Tv prosedentes de la pagina web Antel TV 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-            <!----------------------->
-
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item app">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100"src="./img/portafolio/aplicaciones-panelcontrol.jpg" alt="img"> 
-                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                <a type="button" data-toggle="modal" data-target="#aplicaciones-panelcontrol">
-                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="aplicaciones-panelcontrol" tabindex="-1" role="dialog" aria-labelledby="aplicaciones-panelcontrolLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="aplicaciones-panelcontrolLabel">Sofware de Control empresarial</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                Una Aplicación echa para tener control y registro de las transacciones y ventas, entre otras cosas a nivel empresarial, la cual se personaliza y se crea teniendo en cuenta las necesidades de la empresa
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-            <!----------------------->
-
             </div>
         </div>
     </div>
@@ -743,6 +569,7 @@
 
     <!-- Template Javascript -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/video.js"></script>
 </body>
 
 </html>
