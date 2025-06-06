@@ -3,8 +3,6 @@ from datetime import datetime
 import mysql.connector
 import csv
 
-from config import DB_CONFIG RESPALDO_FOLDER
-
 db_name = DB_CONFIG["database"]
 
 # Ruta donde se almacenarán las copias de seguridad
